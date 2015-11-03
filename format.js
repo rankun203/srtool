@@ -16,8 +16,8 @@ console.log(s1.srt());
 console.log(s2.srt());
 
 
-var instream = fs.createReadStream('./data/test_sub.txt');
-var outfile = fs.openSync('./data/test_sub_out.txt', 'w');
+var instream = fs.createReadStream('./data/bilingual.txt');
+var outfile = fs.openSync('./data/bilingual_out.txt', 'w');
 var regTime = /^\d.*/;
 var regEnglish = /^[a-zA-Z].*/;
 var regChinese = /^[^\w^\s].*/;
@@ -60,12 +60,17 @@ rl.on('line', function (line) {
     tout = moment(_t2, 'mm:ss').format('HH:mm:ss,SSS');
 
   } else if (regEnglish.test(line)) {
+    backupAndClearVars();
+    tin = moment('00:01', 'mm:ss').format('HH:mm:ss,SSS');
+    tout = moment('00:01', 'mm:ss').format('HH:mm:ss,SSS');
+
     console.log('ENG', line);
     lang1 = line;
   } else if (regChinese.test(line)) {
     console.log('CHN', line);
     lang2 = line;
   }
+
 });
 rl.on('close', function () {
   backupAndClearVars();
