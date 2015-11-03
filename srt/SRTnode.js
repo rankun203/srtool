@@ -3,19 +3,18 @@
  * @author rankun203
  */
 
-function SRTnode(id, tin, tout, text) {
+function SRTnode(id, tin, tout, txt) {
   this.id = id;
   this.tin = tin;
   this.tout = tout;
-  this.text = text;
+  this.txt = txt;
 }
 
 SRTnode.prototype.srt = function () {
   var srt = '';
   srt += this.id + '\n';
   srt += this.tin + ' --> ' + this.tout + '\n';
-  srt += this.text + '\n';
-  srt += '\n';
+  srt += this.txt + '\n';
   return srt;
 };
 
