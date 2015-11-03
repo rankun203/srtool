@@ -1,0 +1,480 @@
+0
+00:00:00,000 --> 00:00:13,000
+My name is Jack Miller. I’m a senior test and development engineer for Litens Motive Facility located at the 730 Grountry Gary road.
+我叫Jack Miller，是一名高级测试和开发工程师，供职于Grountry Gary路730号的莱顿汽车工厂。
+
+1
+00:00:13,000 --> 00:00:17,000
+This is the testing environment garage.
+这就是测试环境车间。
+
+2
+00:00:24,000 --> 00:00:29,000
+This is a typical engine that we will use for development work for the Smart’s Sprocket.
+这是我们用于开发Smart’s Sprocket的标准发动机。
+
+3
+00:00:29,000 --> 00:00:34,000
+This is a double overhead cam, four-cylinder, gasoline engine.
+这是双顶置式凸轮轴、四汽缸的汽油发动机。
+
+4
+00:00:34,000 --> 00:00:41,000
+On the engine, we have two cam shafts, hence the double overhead cam nomenclature;
+发动机上有两个凸轮轴，因此我们称之为双顶置式凸轮轴；
+
+5
+00:00:41,000 --> 00:00:46,000
+there’s a crank shaft, which drives a belt, which drives the camshafts.
+这是曲轴，用来驱动齿轮带和凸轮轴。
+
+6
+00:00:46,000 --> 00:00:53,000
+Also at the time when he drives, we have an idler, a tensioner, and a water pump.
+驱动的同时，还有惰轮、拉紧器和水泵。
+
+7
+00:00:54,000 --> 00:00:58,000
+The engine, we have set up on a test box.
+这是发动机，我们已经把它安装在测试箱上。
+
+8
+00:00:58,000 --> 00:01:02,000
+This bench has an electric motor underneath.
+这个台面的底部有一个电动马达。
+
+9
+00:01:02,000 --> 00:01:09,000
+The electric motor is used to drive the crankshaft, which turns the engine.
+电动马达用于驱动曲轴，而曲轴带动发动机。
+
+10
+00:01:09,000 --> 00:01:13,000
+The engine is not running under gasoline power, but clean power by the electric motor.
+发动机不是由汽油驱动，而是靠电动马达的清洁能源驱动。
+
+11
+00:01:15,000 --> 00:01:18,000
+The engine is instrumented for measuring speed.
+为了测试速度，我们在发动机上安装了仪表。 
+
+12
+00:01:18,000 --> 00:01:22,000
+We have sensors located on the camshafts.
+凸轮轴上装有传感器。
+
+13
+00:01:23,000 --> 00:01:31,000
+These are magnetic sensors, which detect the passing of each tooth as it passes by the sensor.
+这些都是磁传感器，在每个齿通过传感器时进行检测。
+
+14
+00:01:31,000 --> 00:01:34,000
+There is one sensor on each of the camshafts.
+每个凸轮轴上都有一个传感器。
+
+15
+00:01:34,000 --> 00:01:40,000
+And the one on the crankshaft is actually located at the back of the engine for convenience.
+为方便起见，曲轴上的传感器实际放置在发动机背面。
+
+16
+00:01:40,000 --> 00:01:44,000
+Let’s get a shot of that. Where is that? It’s back here.
+我们来看一下。它在哪儿？在这里，背面。
+
+17
+00:01:44,000 --> 00:01:51,000
+It’s picking off of the flywheel teeth, which is directly connected to the crankshaft.
+这个传感器用来感应飞轮齿，飞轮齿直接连接曲轴。
+
+18
+00:01:53,000 --> 00:02:03,000
+Ok. So in summary then, these two are the camshafts, and this is the crankshaft.
+好的。总之，这两个是凸轮轴，这个是曲轴。
+
+19
+00:02:03,000 --> 00:02:08,000
+And in this example, crankshaft is where we will apply the SmartSprocket.
+这个例子中，曲轴就是我们使用SmartSprocket的地方。
+
+20
+00:02:10,000 --> 00:02:16,000
+The sensors have cables attached, connected up to these conditioner boxes.
+传感器通过电缆连接到这些控制箱。
+
+21
+00:02:16,000 --> 00:02:36,000
+The conditioner boxes have another speed cable, which we route back along the test cell, through the wall.
+控制箱另有速度电缆，我们让它沿测试间形成回路，穿过墙壁。
+
+22
+00:02:39,000 --> 00:02:43,000
+From the wall we connect them to the data acquisition system.
+通过墙壁，我们把它们连接到数据采集系统。
+
+23
+00:02:44,000 --> 00:02:51,000
+The data acquisition system is a commercially available unit, which is made by Rotec.
+数据采集系统是市场上可买到的装置，由Rotec制造。
+
+24
+00:02:51,000 --> 00:02:54,000
+Rotec是一家德国公司。
+null
+
+25
+00:02:56,000 --> 00:03:01,000
+The acquisition system will collect the data, and it has software, which will process the data.
+这个采集系统将收集数据，并且还有处理数据的软件。
+
+26
+00:03:03,000 --> 00:03:11,000
+So now, what I will do is I will explain in laymen’s terms, what it is, the acquisition system is actually recording and measuring on the engine.
+那么现在，我要用非专业术语解释一下它是什么。实际上，采集系统负责对发动机进行记录和测量。
+
+27
+00:03:13,000 --> 00:03:23,000
+So in time, if you look at the speed of the camshaft, it’s not a constant speed.
+所以，如果看一下凸轮轴的速度，你会发现它并不是恒速的。
+
+28
+00:03:23,000 --> 00:03:30,000
+But, in fact, it’s varying due to the torque impulses of the camshaft of the time in drive.
+但实际上，这个速度之所以会变化是由于发动时凸轮轴会产生扭矩。
+
+29
+00:03:31,000 --> 00:03:42,000
+Rotec软件会获取这个信息、测量速度，随后按照振动角度计算出变化的速度。
+null
+
+30
+00:03:43,000 --> 00:03:48,000
+So if you can imagine frees framing, the cams sprocket.
+所以如果你能想象出框架和凸轮轴链轮，
+
+31
+00:03:48,000 --> 00:03:56,000
+You’ll find that that actually vibrates about a mean position by some angle.
+就会发现振动实际上是在一定角度范围内的平均位置进行。
+
+32
+00:03:57,000 --> 00:04:01,000
+And software will actually calculate what that angle is, based on the engine speed.
+而软件能根据发动机速度实际计算出这个角度的大小。
+
+33
+00:04:03,000 --> 00:04:10,000
+Ok. In the first part of the demonstration, we’ve installed a round crankshaft sprocket on the test engine.
+好的。在第一部分展示中，我们已经在测试发动机上安装了一个圆形曲轴链轮。
+
+34
+00:04:10,000 --> 00:04:12,000
+And now I’ll demonstrate to you the roundness of these sprockets.
+现在，我将向你展示这些链轮的圆度。
+
+35
+00:04:15,000 --> 00:04:22,000
+So measure across the diameter of this sprocket across, the tips of the teeth.
+沿链轮直径和齿尖测量。
+
+36
+00:04:26,000 --> 00:04:34,000
+Now bear in mind too that there is no such thing as perfectly round components in production.
+请注意，在生产中，组件不可能呈现完美的圆形。
+
+37
+00:04:38,000 --> 00:04:45,000
+Roundness may vary a little bit. As you see, they are around 57.17 mm.
+圆度可能会有些许误差。如你所见，大约为57.17 mm。
+
+38
+00:04:47,000 --> 00:04:51,000
+But this is considered to be within acceptable round tolerance specifications.
+但是这一数字属于可接受的圆度公差范围。
+
+39
+00:04:57,000 --> 00:05:01,000
+The engine has now been prepared for a test. The round sprocket, it is installed.
+现在，发动机已经准备好接受测试。圆形链轮已经安装完毕。
+
+40
+00:05:01,000 --> 00:05:05,000
+We’re gonna run our test just by leaving the test cell, and getting the engine to start running.
+现在我们要离开测试间，启动发动机，开始测试。
+
+41
+00:05:22,000 --> 00:05:25,000
+We just started the engine now with start button.
+我们现在按下开始按钮启动发动机。
+
+42
+00:05:32,000 --> 00:05:34,000
+We can see the engine turning now.
+现在我们可以看到，发动机已经开始运转。
+
+43
+00:05:35,000 --> 00:05:41,000
+The engine is now running at approximately 1000 rpm. So the next step.
+现在发动机转速约为每分钟1000转。那么来进行下一步。
+
+44
+00:05:41,000 --> 00:05:45,000
+We have the engine controller. This is the PC that actually operates the motor driver.
+这是发动机控制器。这是实际操作马达驱动器的电脑。
+
+45
+00:05:45,000 --> 00:05:58,000
+And we have a speed split, from 1000-start-300 rpm up to 1600-start-6200 rpm over a 100-second timeframe.
+现在我们进行速度分离，在100秒以内迅速提高转速。
+
+46
+00:05:59,000 --> 00:06:04,000
+I’m just gonna start the automated ram process.
+现在我要开始自动活塞过程。
+
+47
+00:06:06,000 --> 00:06:13,000
+At the same time, using the acquisition system, I’m gonna start the acquisition process.
+与此同时，还要开始采集过程。
+
+48
+00:06:14,000 --> 00:06:17,000
+We’re just gonna record the data first.
+首先，我们要记录数据。
+
+49
+00:06:21,000 --> 00:06:33,000
+So we see a real-time engine rpm.  There is a digital reload. And we have a graph displaying what the engine speed is at the current time, following the cursor.
+现在我们看到了实时发动机转速。现在是数据重载。现在，随着光标移动，我们得到了当前发动机速度的曲线图。
+
+50
+00:06:34,000 --> 00:06:37,000
+So once again, the speed ramp is at about 100-second interval.
+再强调一遍，速度大约每100秒提高一次。
+
+51
+00:08:06,000 --> 00:08:15,000
+Now the system has completed acquiring data. So just to explain, we have a round of sprocket on the ramp up speed. Just gonna accept the data.
+现在系统已经完成了数据采集。解释一下，我们已进行了一轮链轮加速测试。准备接收数据。
+
+52
+00:08:16,000 --> 00:08:19,000
+Now we’re gonna preview the information before we could save it to a data file.
+存档之前，我们要先预览一下信息。
+
+53
+00:08:20,000 --> 00:08:31,000
+First graph is now the crankshaft rpm. See it grew from approximately 800 rpm up to 6200 rpm over 95-second interval.
+第一张曲线图是曲轴转速。看，95秒以内，它从大约800 rpm增加到6200 rpm。
+
+54
+00:08:31,000 --> 00:08:37,000
+Next we see the left camshaft. You see the speed variations over the mid-speed range.
+接下来我们看一下左凸轮轴。可以看到，速度在中速范围内变化。
+
+55
+00:08:38,000 --> 00:08:41,000
+Now we have the right camshaft.
+现在看一下右凸轮轴。
+
+56
+00:08:42,000 --> 00:08:44,000
+So I’m gonna close and save this data file.
+接下来我要关闭并保存数据文件。
+
+57
+00:08:54,000 --> 00:08:57,000
+Now I’m just gonna process the information with an evaluation.
+现在我要对这些数据进行评估处理。
+
+58
+00:08:58,000 --> 00:09:19,000
+This evaluation is set up to look at the second-order component of the timing error between the, for example, the top graph has between the crankshaft and left cam, looking at the crankshaft versus the left cam, and we see the error is about 1.3 degrees.
+此项评估是为了查看存在计时误差的按秒计顺序组件，比如上方曲线图中曲轴和左凸轮间的误差，通过对比曲轴和左凸轮，我们可以看到误差大约为1.3°。
+
+59
+00:09:19,000 --> 00:09:23,000
+On the right camshaft, it’s approximately 1.4 degrees.
+右凸轮轴的误差大约是1.4°。
+
+60
+00:09:24,000 --> 00:09:27,000
+Ok. Once again, this is the second-order component only.
+好的。再次强调，这仅仅是按秒计顺序的组件。
+
+61
+00:09:33,000 --> 00:09:36,000
+And next we’re gonna apply a Smart Sprocket for a demonstration.
+接下来，我们将使用Smart Sprocket进行演示。
+
+62
+00:09:36,000 --> 00:09:44,000
+This is the camshaft Smart Sprocket we will be using. And just to demonstrate the shape of the Smart Sprocket, we have a long axis.
+这就是我们要使用的凸轮轴Smart Sprocket。为了展示Smart Sprocket的形状，我们准备了一个长轴。
+
+63
+00:09:44,000 --> 00:09:45,000
+What’s the number here?
+这里的数字是什么？
+
+64
+00:09:46,000 --> 00:09:58,000
+The diameter is about 57.11 mm on the long axis; 90 degrees away, there is 55.06.
+长轴直径约为57.11 mm；调整90°，直径约为55.06mm。
+
+65
+00:09:58,000 --> 00:10:01,000
+Ok. And now I’m gonna install the Smart Sprocket on our test engine.
+好的。现在我要把Smart Sprocket安装到测试发动机上。
+
+66
+00:10:02,000 --> 00:10:07,000
+So to do that, I have to remove the belt and the tensioner first.
+为此，我必须首先卸下齿轮带和拉紧器。
+
+67
+00:10:12,000 --> 00:10:17,000
+Ok. Now I’m going to install the Smart Sprocket, which has been designed according to the patterns.
+好的。接下来我要开始安装Smart Sprocket，这是根据图案设计的。
+
+68
+00:10:18,000 --> 00:10:24,000
+You can see the mark, the line, indicates the long axis; of course the short axis is 90 degrees from that.
+可以看到，这里有标记和线，代表长轴；当然，90°以外的就是短轴。
+
+69
+00:10:39,000 --> 00:10:42,000
+The Smart Sprocket now has been installed according to the outlines of the patterns.
+现在Smart Sprocket已经按照图案安装完毕。
+
+70
+00:10:42,000 --> 00:10:54,000
+We see we have the long axis as indicated by the line on the crankshaft sprocket.
+我们可以看到，长轴与曲轴链轮上的线相吻合。
+
+71
+00:10:54,000 --> 00:10:57,000
+Just for reference, what I will do is to mark the camshafts.
+说明一下，接下来我要在凸轮轴上做标记。
+
+72
+00:10:57,000 --> 00:11:02,000
+The camshafts are now located at the maximum fluctuating torque, as right by the camshafts.
+凸轮轴现在位于最大波动扭矩，和凸轮轴右方一样。
+
+73
+00:11:02,000 --> 00:11:11,000
+So I’m just gonna put some reference marks on the camshafts.
+我现在要在凸轮轴上做一些参考标记，
+
+74
+00:11:13,000 --> 00:11:15,000
+Just to indicate their position.
+用于标注位置。
+
+75
+00:11:22,000 --> 00:11:26,000
+Now I’m just gonna finish closing up the engine, get ready for the test.
+现在我准备装好发动机，准备测试。
+
+76
+00:11:49,000 --> 00:11:52,000
+Ok, now I’m gonna leave the test cell and start the engine.
+很好，现在我要离开测试间，启动发动机。
+
+77
+00:12:20,000 --> 00:12:25,000
+Ok. The engine is now running. So I can start the recycle with the motor controller.
+好的。发动机已经开始运行了。现在我可以用马达控制器启动循环了。
+
+78
+00:12:27,000 --> 00:12:33,000
+Ok. Once again we’re gonna run the speed split and start the acquisition system.
+好的。我们将再次进行速度分离，并开启采集系统。
+
+79
+00:13:24,000 --> 00:13:28,000
+It’ll start logging in the correct position. Once again we’re gonna run the speed split and start the acquisition system. We’re gonna look at the data file.
+它将在正确位置运行。我们将再次进行速度分离，并开启采集系统。现在让我们看一下数据文件。
+
+80
+00:13:37,000 --> 00:13:49,000
+Ok. This is the crankshaft data, left cam, right cam. So I’m gonna save the data file and then run the evaluation.
+很好。这就是曲轴数据，左凸轮，右凸轮。现在我要保存数据文件，之后开始评估。
+
+81
+00:13:50,000 --> 00:13:54,000
+So once again we’re looking at the second order, camshaft, torsional vibration.
+再次强调，我们所看到的是按秒计顺序、凸轮轴、扭转振动。
+
+82
+00:13:54,000 --> 00:14:03,000
+And here you see we have second order in the range of about 0.1 degrees, which is down considerably from the round sprocket, which is at about 1.3 degree area.
+看，我们得出了按秒计顺序约0.1°的范围，这一范围在圆形链轮处开始明显降低，而圆形链轮大约位于1.3°区域。
+
+83
+00:14:20,000 --> 00:14:25,000
+Ok. For the next part of the demonstration, the Smart Sprocket has been installed incorrectly.
+很好。在下一步演示中，Smart Sprocket已被正确安装。
+
+84
+00:14:25,000 --> 00:14:33,000
+As outlined prior to the patterns. Now we see that the long axis is rotated 90 degrees from where they were in the correct position.
+现在，我们看到长轴位置与正确位置相比旋转了90°。
+
+85
+00:14:33,000 --> 00:14:41,000
+You see that there’s a long axis in that direction.
+看，长轴沿着那个方向。
+
+86
+00:14:43,000 --> 00:14:55,000
+And the be warned of the camshafts, same marks are still there to demonstrate that they’re situated, located, in the position of the maximum fluctuating torque as generated by the camshafts.
+请注意，凸轮轴的标记仍保留在原地，用于展示凸轮轴被置于凸轮轴生成的最大波动扭矩处。
+
+87
+00:14:57,000 --> 00:15:00,000
+Ok. So what we’re gonna do now is to just finish off the installation.
+好。我们现在要做的是完成安装。
+
+88
+00:15:31,000 --> 00:15:32,000
+Ok. We’ll leave the test cell now and start the engine.
+好了。现在我们要离开测试间，启动发动机。 
+
+89
+00:16:02,000 --> 00:16:11,000
+Ok. We’re gonna start the cycle now: the motor controller and the data acquisition system.
+很好。接下来，我们要启动循环：马达控制器和数据采集系统。
+
+90
+00:16:55,000 --> 00:17:00,000
+So we’re gonna save our data file, sprocket margin and incorrect position.
+现在，我们要保存数据文件、链轮边缘和错误位置，
+
+91
+00:17:02,000 --> 00:17:03,000
+Just to review the data.
+以备数据审查。
+
+92
+00:17:08,000 --> 00:17:18,000
+Let me see the crankshaft information. Here’s the left cam and the right cam.
+来让我看一下曲轴信息。这是左凸轮，这是右凸轮。
+
+93
+00:17:19,000 --> 00:17:24,000
+And we’re gonna close this up and save the data file. And we’ll perform an evaluation.
+现在让我们关闭并保存数据文件，然后进行评估。
+
+94
+00:17:28,000 --> 00:17:38,000
+Now we see the torsional vibration, again, the second order component, about 2.1, 2.2 degrees on both the left and the right cam.
+可以再一次看到扭转振动、按秒计顺序组件，左右凸轮都有约2.1°、2.2°。
+
+95
+00:17:38,000 --> 00:17:41,000
+So it’s even considerably worse that even the round sprocket.
+也就是说，就算是圆形链轮也很糟糕。
+
