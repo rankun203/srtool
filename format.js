@@ -17,7 +17,7 @@ console.log(s2.srt());
 
 
 var instream = fs.createReadStream('./data/bilingual.txt');
-var outfile = fs.openSync('./data/bilingual_out.txt', 'w');
+var outfile = fs.openSync('./data/bilingual_out.srt', 'w');
 var regTime = /^\d.*/;
 var regEnglish = /^[a-zA-Z].*/;
 var regChinese = /^[^\w^\s].*/;
