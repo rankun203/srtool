@@ -42,10 +42,10 @@ function backupAndClearVars() {
   fs.write(outfile, srt.srt() + '\n');
 
   inc++;
-  tin = null;
-  tout = null;
-  lang1 = null;
-  lang2 = null;
+  tin = '00:00:01,000';
+  tout = '00:00:01,000';
+  lang1 = '';
+  lang2 = '';
 }
 rl.on('line', function (line) {
 
