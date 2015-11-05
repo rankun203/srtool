@@ -18,7 +18,7 @@ console.log(s2.srt());
 
 var instream = fs.createReadStream('./data/test_sub.txt');
 var outfile = fs.openSync('./data/test_sub_out.srt', 'w');
-var regTime = /^\d.*/;
+var regTime = /^\d.*/; // TODO Be more accurate
 var regEnglish = /^[a-zA-Z].*/;
 var regChinese = /^[^\w^\s].*/;
 
