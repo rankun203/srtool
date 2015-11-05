@@ -30,12 +30,14 @@ var rl = readline.createInterface({
 // Find out if we are currently another subtitle
 // If it's a time, only could be a new subtitle,
 var subtitles = [];
-var tin, tout, lang1, lang2;
-var inc = 0;
+var tin, tout, lang1, lang2, inc = 0;
 function backupAndClearVars() {
   if (!tin) return;
 
-  var txt = lang1 + '\n' + lang2;
+  // construct subtitles
+  var txt = lang1;
+  if (lang2 && lang2.length > 0) txt += '\n' + lang2;
+
   var srt = new SRT(inc, tin, tout, txt);
   subtitles.push(srt);
 
@@ -48,6 +50,7 @@ function backupAndClearVars() {
   lang2 = '';
 }
 rl.on('line', function (line) {
+  line = line.trim();
 
   if (regTime.test(line)) {
     // 16:55-17:00
@@ -61,12 +64,22 @@ rl.on('line', function (line) {
 
   } else if (regEnglish.test(line)) {
     console.log('ENG', line);
-    lang1 = line;
+    appendTitle(line);
+
   } else if (regChinese.test(line)) {
     console.log('CHN', line);
-    lang2 = line;
+    appendTitle(line);
+
   }
 });
 rl.on('close', function () {
   backupAndClearVars();
 });
+
+function appendTitle(line) {
+  // line1 go first
+  if (lang1 && lang1.length > 0)
+    lang2 = line;
+  else
+    lang1 = line;
+}

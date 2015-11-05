@@ -56,7 +56,7 @@ The engine is not running under gasoline power, but clean power by the electric 
 11
 00:01:15,000 --> 00:01:18,000
 The engine is instrumented for measuring speed.
-为了测试速度，我们在发动机上安装了仪表。 
+为了测试速度，我们在发动机上安装了仪表。
 
 12
 00:01:18,000 --> 00:01:22,000
@@ -120,8 +120,8 @@ The data acquisition system is a commercially available unit, which is made by R
 
 24
 00:02:51,000 --> 00:02:54,000
+Rotec is a German corporation.
 Rotec是一家德国公司。
-null
 
 25
 00:02:56,000 --> 00:03:01,000
@@ -145,8 +145,8 @@ But, in fact, it’s varying due to the torque impulses of the camshaft of the t
 
 29
 00:03:31,000 --> 00:03:42,000
+The Rotec software will take this information, measure the speed, and then calculate what that varying speed is in terms of a vibration angle.
 Rotec软件会获取这个信息、测量速度，随后按照振动角度计算出变化的速度。
-null
 
 30
 00:03:43,000 --> 00:03:48,000
@@ -441,7 +441,7 @@ Ok. So what we’re gonna do now is to just finish off the installation.
 88
 00:15:31,000 --> 00:15:32,000
 Ok. We’ll leave the test cell now and start the engine.
-好了。现在我们要离开测试间，启动发动机。 
+好了。现在我们要离开测试间，启动发动机。
 
 89
 00:16:02,000 --> 00:16:11,000
